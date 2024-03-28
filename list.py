@@ -23,3 +23,29 @@ users.sort()
 print(users)
 users.sort(reverse=True)
 print(users)
+
+numbers = [7 , 5 , 3 , 8 , 2 , 9 , 1 , 4 , 6]
+print(numbers)
+sorted_numbers = sorted(numbers)
+print(sorted_numbers)
+print(numbers)
+reverse_sorted_numbers = sorted(numbers , reverse=True)
+print(reverse_sorted_numbers)
+print(numbers)
+
+print(min(numbers))
+print(max(numbers))
+print(sum(numbers))
+
+print(numbers.index(8))
+print(numbers.count(5))
+print(10 in numbers)
+print(5 in numbers)
+
+for i in numbers:
+    print(i)
+
+for(i , user) in enumerate(users ):
+    print(i , user)
+    
+print('-'.join(users))
