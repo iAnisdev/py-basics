@@ -10,12 +10,16 @@ class User:
     
     def say_age(self):
         return f'I am {self.age} years old'
+    
+    def __str__ (self):
+        return "User is {} and {} years old".format(self.name, self.age)
 
 print(User)
 print(type(User))
 
 
 adam = User('Adam', 25)
+print(adam)
 print(adam.greeting())
 print(adam.say_age())
 print(adam.name)
