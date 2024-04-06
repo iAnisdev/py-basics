@@ -1,4 +1,6 @@
 class User:
+    isAdmin = False
+    isActive = True
     def __init__ (self , name , age):
         self.name = name
         self.age = age
@@ -22,3 +24,17 @@ print(adam.age)
 eve = User('Eve' ,  28)
 print(eve.greeting())
 print(eve.say_age())
+
+print(adam.isAdmin)
+print(eve.isAdmin)
+eve.isAdmin = True
+print(eve.isAdmin)
+
+print(User.isActive)
+print(adam.isActive)
+print(eve.isActive)
+
+User.isActive = False
+print(User.isActive)
+print(adam.isActive)
+print(eve.isActive)
