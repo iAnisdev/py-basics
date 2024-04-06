@@ -38,3 +38,24 @@ User.isActive = False
 print(User.isActive)
 print(adam.isActive)
 print(eve.isActive)
+
+class Editor (User):
+    pass
+class Admin (User):
+    isAdmin = True
+    say_age = lambda self: 'I am an Admin and i never age'
+
+james = Editor('James', 30)
+print(james.greeting())
+print(james.say_age())
+print(james.isAdmin)
+
+john = Admin('John', 35)
+print(john.greeting())
+print(john.say_age())
+print(john.isAdmin)
+
+print(isinstance(john, Admin))
+print(isinstance(john, User))
+print(isinstance(john, Editor))
+print(Admin.__bases__)
