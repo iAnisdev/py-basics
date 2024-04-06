@@ -20,3 +20,8 @@ print(setA.union(setB))
 print(setA.intersection(setB))
 print(setA.difference(setB))
 print(setB.difference(setA))
+print(setA.isdisjoint(setB))
+
+subsetA = {1, 2, 3}
+print(subsetA.issubset(setA))
+print(setA.issuperset(subsetA))
