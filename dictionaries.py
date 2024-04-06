@@ -20,6 +20,8 @@ teamChicago['name'] = 'Chicago White Sox'
 teamChicago['founded'] = 1901
 
 print(teamChicago)
+teamChicago.clear()
+print(teamChicago)
 
 teamSanFrancisco = dict()
 
@@ -58,6 +60,10 @@ print(teamNewYork['wins'][0])
 print(teamNewYork.keys())
 print(teamNewYork['owner'].keys())
 
+teamNewYork.update({
+    'losses': [1921, 1922, 1926, 1942, 1944, 1963, 1964, 1976, 1977, 1978, 1981, 2001, 2003, 2004, 2010, 2012, 2017]
+})
+
 print(teamNewYork.values())
 print(teamNewYork['owner'].values())
 
@@ -70,3 +76,25 @@ print(teamNewYork['owner'].items())
 
 for key, value in teamNewYork.items():
     print(key, value)
+
+
+teamWashington = {
+    'name': 'Washington Nationals',
+    'founded': 1969,
+    'wins': [1981],
+    'owner': {
+        'name': 'Lerner Enterprises',
+        'founded': 1952,
+        'website': 'nationals.com'
+    }
+} 
+
+print(teamWashington)
+print(teamWashington['owner']['name'])
+teamWashington.update({
+    'losses': [1981]
+})
+
+print(teamWashington)
+teamWashington.popitem()
+print(teamWashington)
