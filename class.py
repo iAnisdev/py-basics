@@ -63,3 +63,12 @@ print(isinstance(john, Admin))
 print(isinstance(john, User))
 print(isinstance(john, Editor))
 print(Admin.__bases__)
+
+andrea = User('Andrea', 40)
+print(andrea)
+
+# del andrea.age
+# print(andrea)
+
+del andrea
+print(andrea)
