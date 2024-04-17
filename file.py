@@ -35,3 +35,7 @@ with open('./chain.pem' , 'w') as file:
 shutil.copyfile('./chain.pem', './chain-copy.pem')
 
 os.rename('./chain-copy.pem', './chain2.pem')
+
+#create src
+os.mkdir('./src')
+os.replace('./chain2.pem', './src/chain2.pem')
