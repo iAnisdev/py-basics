@@ -39,3 +39,18 @@ os.rename('./chain-copy.pem', './chain2.pem')
 #create src
 os.mkdir('./src')
 os.replace('./chain2.pem', './src/chain2.pem')
+
+#remove
+try :
+    os.remove('./chain.pem')
+    os.remove('./src/chain2.pem')
+    #os.rmdir('./src')
+    shutil.rmtree('./src')
+except FileNotFoundError:
+    print('File not found')
+except PermissionError:
+    print('Permission denied')
+except OSError:
+    print('OS Error')
+except Exception as e:
+    print("e is ", e)
