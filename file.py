@@ -19,3 +19,7 @@ def check_exists(file_path):
 check_exists(path_license)
 check_exists(path_chain)
 check_exists(path_go)
+
+
+with open('./LICENSE') as file:
+    print(file.read())
