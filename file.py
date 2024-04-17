@@ -23,3 +23,6 @@ check_exists(path_go)
 
 with open('./LICENSE') as file:
     print(file.read())
+
+with open('./chain.pem' , 'w') as file:
+    file.write('This is a chain.pem file')
