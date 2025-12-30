@@ -25,3 +25,13 @@ print(f"NOT FIVE Result: {NOT_FIVE_RESULT}")  # Output: -6 (it is 6 because of t
 # to get the positive value back, we can do the following:
 POSITIVE_VALUE = ~NOT_FIVE_RESULT 
 print(f"Positive Value from NOT Result: {POSITIVE_VALUE}")  # Output: 5
+
+#Shift Operators -> used to shift bits to left or right in a binary number using << and >>
+
+# left shift (shifts bits to the left, adding 0s on the right)
+LEFT_SHIFT_RESULT = FIVE << 1 # shifts 0101 to 1010
+print(f"Left Shift Result: {LEFT_SHIFT_RESULT}")  # Output: 10
+
+# right shift (shifts bits to the right, discarding bits on the right)
+RIGHT_SHIFT_RESULT = SIX >> 1 # shifts 0110 to 0011
+print(f"Right Shift Result: {RIGHT_SHIFT_RESULT}")  # Output: 3
